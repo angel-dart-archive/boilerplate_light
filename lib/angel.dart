@@ -37,6 +37,9 @@ Future<Angel> createServer() async {
   // On 404's, let's redirect the user to a pretty error page.
   app.after.add((ResponseContext res) => res.redirect('/not-found.html'));
 
+  // Enable GZIP and DEFLATE compression (conserves bandwidth)
+  app.responseFinalizers.addAll([gzip(), deflate()]);
+
   // Logs requests and errors to both console, and a file named `log.txt`.
   // https://github.com/angel-dart/diagnostics
   await app.configure(logRequests(new File('log.txt')));
