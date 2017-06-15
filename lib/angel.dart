@@ -38,6 +38,7 @@ Future<Angel> createServer() async {
   app.after.add((ResponseContext res) => res.redirect('/not-found.html'));
 
   // Enable GZIP and DEFLATE compression (conserves bandwidth)
+  // https://github.com/angel-dart/compress
   app.responseFinalizers.addAll([gzip(), deflate()]);
 
   // Logs requests and errors to both console, and a file named `log.txt`.
