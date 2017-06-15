@@ -1,0 +1,12 @@
+name: angel
+description: An easily-extensible web server framework in Dart.
+publish_to: none # Ensure we don't accidentally publish our private code! ;)
+environment:
+  sdk: ">=1.19.0"
+homepage: https://github.com/angel-dart/angel
+dependencies:
+  angel_common: ^1.0.0 # Bundles the most commonly-used Angel packages.
+dev_dependencies:
+  angel_hot: ^1.0.0 # Hot-reloading support. :)
+  angel_test: ^1.0.0 # Testing helpers
+  test: ^0.12.0
