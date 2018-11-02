@@ -1,3 +1,7 @@
+# DEPRECATED
+This is an old boilerplate, from much earlier in Angel's life, when the only option was a heavyweight starter project.
+*Now*, the default boilerplate is already quite light, in terms of starter code.
+
 # boilerplate_light
 [![The Angel Framework](https://angel-dart.github.io/images/logo.png)](https://angel-dart.github.io)
 
